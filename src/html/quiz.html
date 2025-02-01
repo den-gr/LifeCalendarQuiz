@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz</h1>
+        <div id="question-container" class="question-container">
+            <p id="question"></p>
+            <ul id="answers" class="answers-list">
+                <!-- Answers will be dynamically added here -->
+            </ul>
+            <div id="date-input-container" class="date-input-container">
+                <label for="date-input">Select a date:</label>
+                <input type="date" id="date-input">
+                <button id="date-submit" class="date-submit">Submit</button>
+            </div>
+        </div>
+        <div id="quiz-complete" class="quiz-complete" style="display: none;">
+            <p>Quiz Complete!</p>
+            <a href="../../index.html" class="return-button">Return to Home</a>
+        </div>
+        <button id="next-button" class="next-button">Next</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/quiz.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
